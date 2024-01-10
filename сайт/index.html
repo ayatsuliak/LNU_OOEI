@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+        <title>My site</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <style>
+            .rightimg{
+                float: right;
+                padding: 0 0 10px 10px;
+            }
+        </style>   
+    </head>
+    <body>
+        <link rel="stylesheet" href="main.css">
+        <header>
+            <div id="logo" onclick="slowScroll('#top')">
+                <span>Yatsuliak</span>
+            </div>
+            <div id="about">
+                <a href="#" title="Про мене" onclick="slowScroll('#main')">Про мене</a>                                
+                <a href="#" title="Контакти" onclick="slowScroll('#contacts')">Контакти</a>
+                <a href="contact.html" title="Відповіді на питання" onclick="slowScroll('#faq')">Питання та відповіді</a>
+            </div>               
+        </header>
+        <div id="top">
+            <h1>Це мій перший сайт</h1>
+            <h3>Створив Яцуляк Андрій</h3>
+        </div>             
+        <div id="main">
+            <div class="intro">
+                <h2>Деяка інформація про мене</h2>                    
+            </div>           
+            <div class="text">
+                <span><img src="моєфото.jpg" class="rightimg" alt="">Мене звати Андрій. Мені 18 років. Навчаюсь у Львівському Національному Університеті ім. І. Франка. Люблю подорожувати, програмувати, граю футбол</span>                
+            </div>                       
+        </div>
+        <div id="contacts">
+            <div class="intro">
+                <h2>Контакти</h2>                
+            </div>            
+            <div class="table">                
+                <table>                    
+                    <tr>
+                        <td>Номер телефону</td>
+                        <td>0800700265</td>                        
+                    </tr>
+                    <tr>
+                        <td>Мій e-mail</td>
+                        <td>andrii.yatsuliak@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+        </div>        
+          <footer>
+            <div id="social">
+                <a href="https://www.instagram.com/yatsuliak22/"><img src="Instagram.png" alt="instagram" title="instagram"></a>                 
+                <a href="https://www.facebook.com/profile.php?id=100015687421051/"><img src="facebook.png" alt="facebook" title="facebook"></a>               
+            </div>
+            <div id="right">
+                Всі права захищені &copy; 
+                2021
+            </div>
+        </footer>          
+    </body>    
+</html>

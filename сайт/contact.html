@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+        <title>Питання та відповіді</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>          
+    </head>
+    <body>
+        <link rel="stylesheet" href="main.css">
+        <header>            
+            <div id="logo" onclick="slowScroll('#top')">
+                <span>Yatsuliak</span>
+            </div>            
+            <div id="about">    
+                <a href="#" title="Про мене" onclick="slowScroll('#main')">Про мене</a>                                
+                <a href="#" title="Контакти" onclick="slowScroll('#contacts')">Контакти</a>           
+                <a href="#" title="Відповіді на питання" onclick="slowScroll('#faq')">Питання та відповіді</a>
+            </div>               
+        </header>  
+        <div id="top">
+            <h1>Питання та відповіді</h1>
+            
+        </div>        
+        <div id="faq">            
+             
+            <ul>
+                <li>Якщо виникли запитання ви можете заповнити форму нижче</li>
+                <li>Після відправлення вашого запитання ми обов'язково вам відповімо</li>
+            </ul>  
+            <form id="form_input">
+              <label for="name">Ім’я<span>*</span></label><br>
+              <input type="text" placeholder="Введіть ім’я" name="name" id="name"><br>
+              <label for="email">Ваша пошта <span>*</span></label><br>
+                    <input type="email" placeholder="Введіть email" name="email" id="email"><br>
+                    <label for="message">Ваше повідомлення <span>*</span></label><br>
+                    <textarea placeholder="Введіть ваше повідомлення" name="message" id="message"></textarea><br>
+                    <div id="mess_send" class="btn">Відправити</div>
+            </form>            
+          </div> 
+          <footer>
+            <div id="social">
+                <a href="https://www.instagram.com/yatsuliak22/"><img src="Instagram.png" alt="instagram" title="instagram"></a>                 
+                <a href="https://www.facebook.com/profile.php?id=100015687421051/"><img src="facebook.png" alt="facebook" title="facebook"></a>               
+            </div>
+            <div id="right">
+                Всі права захищені &copy; 
+                2021
+            </div>
+        </footer> 
+    </body>
